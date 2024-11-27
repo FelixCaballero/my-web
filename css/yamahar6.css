@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.logo {
+    width: 5%;
+    height: 8%;
+    left: 94%;
+    top: 20px;
+    position: fixed;
+}
+
+header {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    margin-top: 8%;
+}
+
+.image-container {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.moto-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+
+.features {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+}
+
+.features h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.features ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.features li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.buy-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #0066cc;
+    color: white;
+    font-size: 1.4em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.buy-btn:hover {
+    background-color: #2719e6;
+}
+
+.video-section {
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.video-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    margin-top: 20px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    background-color:#000;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+#menu {
+    width: 300px;
+    height: 100%;
+    background-color: #003366; /* Azul oscuro */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    padding: 20px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3);
+    overflow-y: auto; /* Para manejar menús largos */
+}
+
+.close-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Botón de cerrar */
+.close-btn {
+    align-self: flex-end;
+    background: none;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.close-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilo de la lista principal */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+ul > li {
+    font-size: 20px;
+    margin: 15px 0;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Enlaces principales */
+ul > li > a, ul > li > span {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ul > li > a:hover, ul > li > span:hover {
+    background-color: #00509e;
+}
+
+/* Submenús */
+.submenu {
+    display: none;
+    list-style: none;
+    padding: 10px 0;
+    position: relative;
+    background-color: #004080; /* Azul más claro */
+    border-radius: 8px;
+    width: 90%;
+    margin-left: 20px;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.submenu li {
+    padding: 5px 10px;
+}
+
+.submenu li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.submenu li a:hover {
+    background-color: #0066cc;
+}
+
+/* Animación de submenús */
+.submenu {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Interacción de menús */
+.dropdown.open > .submenu {
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
